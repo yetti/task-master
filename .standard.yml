@@ -1,0 +1,15 @@
+fix: true
+parallel: true
+format: progress
+ruby_version: 3.2
+
+ignore:
+  - 'vendor/**/*'
+  - 'db/schema.rb'
+
+plugins:
+  - standard-rails:
+      target_rails_version: 7.1
+  - standard-minitest
+  - standard-performance
+  - standard-thread_safety
