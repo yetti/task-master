@@ -26,6 +26,7 @@ jobs:
         run: bin/bundler-audit --update
 
   lint:
+    needs: audit
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -41,6 +42,7 @@ jobs:
         run: bin/erblint --lint-all
 
   test:
+    needs: audit
     runs-on: ubuntu-latest
     services:
       postgres:
