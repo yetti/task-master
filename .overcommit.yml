@@ -55,6 +55,5 @@ PrePush:
 
   # run tests
   RakeTarget:
+    targets: ["test:all"]
     enabled: true
-    quiet: true
-    command: ["bin/rake"]

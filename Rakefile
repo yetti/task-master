@@ -4,3 +4,11 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
+
+# run both unit and system tests with one task
+namespace :test do
+  task all: :environment do
+    Rake::Task["test"].invoke
+    Rake::Task["test:system"].invoke
+  end
+end
