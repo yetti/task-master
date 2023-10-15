@@ -24,36 +24,31 @@ PreCommit:
   # check Gemfile and Gemfile.lock are in sync
   BundleCheck:
     enabled: true
-    quiet: true
     on_warn: fail
 
   # check for security vulnerabilities in dependencies
   BundleAudit:
     enabled: true
-    quiet: true
     on_warn: fail
     command: ["bin/bundler-audit", "--update"]
 
   # lint views
   ErbLint:
     enabled: true
-    quiet: true
     command: ["bin/erblint", "--lint-all"]
 
   # link Ruby code
   RuboCop:
     enabled: true
-    quiet: true
     command: ["bin/standardrb", "--fix"]
 
 PrePush:
   # check for security vulnerabilities in source code
   Brakeman:
     enabled: true
-    quiet: true
     command: ["bin/brakeman", "--format", "github", "--no-pager", "--no-exit-on-warn"]
 
   # run tests
   RakeTarget:
-    targets: ["test:all"]
     enabled: true
+    targets: ["test:all"]
