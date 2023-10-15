@@ -54,6 +54,9 @@ gem "dotenv-rails", "~> 2.8", groups: %i[development test]
 gem "lograge", "~> 0.14.0"
 
 group :development, :test do
+  # Run multiple processes defined in Procfile.dev
+  gem "foreman"
+
   # Analyses code for security vulnerabilities
   gem "brakeman", "~> 6.0"
 
