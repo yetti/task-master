@@ -45,3 +45,6 @@
 
 # Ignore coverage report
 /coverage
+
+# Ignore rdbg autoattach config
+.vscode/rdbg_autoattach.json

@@ -1,9 +1,0 @@
-{
-  "type": "rdbg",
-  "name": "Attach with rdbg",
-  "request": "attach",
-  "rdbgPath": "/Users/yetti/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/debug-1.8.0/exe/rdbg",
-  "debugPort": "/var/folders/l_/g2yn_rxd3n36p9_0fz8dj3cr0000gn/T/ruby-debug-sock-501/ruby-debug-yetti-78991",
-  "localfs": true,
-  "autoAttach": "0.39158148603342013"
-}
